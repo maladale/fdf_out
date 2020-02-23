@@ -27,7 +27,7 @@ $(NAME): $(FT_LIB) $(OBJ)
 	@echo "\n$(GREEN)object files were created$(RESET)"
 	@echo "$(GREEN)$(NAME) executable file was created$(RESET)"
 %.o: %.c $(INC)
-	$(CC) $(FLAGS) -o $@ -c $< -I ./includes -I ./libft
+	$(CC) -v $(FLAGS) -o $@ -c $< -I ./includes -I ./libft
 $(FT_LIB): force
 	make -C ./libft
 

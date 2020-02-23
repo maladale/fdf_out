@@ -13,6 +13,8 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <string.h>
+# include <stdlib.h>
+# include <unistd.h>
 
 typedef	struct		s_list
 {
@@ -84,5 +86,6 @@ char				*ft_reverss(char *str);
 int					ft_isupper(unsigned int c);
 int					ft_islower(unsigned int c);
 int					ft_squad(int n);
+int				get_next_line(const int fd, char **line);
 
 #endif

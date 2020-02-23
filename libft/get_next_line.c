@@ -1,6 +1,5 @@
 
-#include "gnl.h"
-#include "ft_memalloc.c"
+#include "libft.h"
 
 t_lst	*ft_old_fd(t_lst *lst, const int fd, t_lst **list2)
 

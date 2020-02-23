@@ -1,4 +1,4 @@
-#include <stdio.h>
+
 #include "fdf.h"
 
 int main(int argc, char **argv)
@@ -6,7 +6,7 @@ int main(int argc, char **argv)
     t_coord *our_coord;
 //++ all check in read_file
     if (!check_format(argc, argv)) {
-        printf("Invalid data\n");
+        ft_putstr("Invalid data\n");
         return (0);
     }
     //-- all check in read_file
@@ -16,7 +16,7 @@ int main(int argc, char **argv)
     }
     if (!read_file(argv[1], our_coord))
     {
-        printf("Can't read file %s\n", argv[1]);
+        ft_putstr("Can't read file %s\n");
         free(our_coord);
         return (0);
     }

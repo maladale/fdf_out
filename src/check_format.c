@@ -2,7 +2,7 @@
 // Created by den_b_000 on 22.02.2020.
 //
 
-#include <fdf.h>
+#include "fdf.h"
 
 int count_arr(char **arr)
 {

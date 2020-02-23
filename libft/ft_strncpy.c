@@ -2,6 +2,8 @@
 // Created by den_b_000 on 20.09.2019.
 //
 
+#include "libft.h"
+
 char	*ft_strncpy(char *s1, const char *s2, size_t n)
 {
     size_t	c;

@@ -1,12 +1,12 @@
 //
 // Created by den_b_000 on 18.09.2019.
 //
-#include <stdlib.h>
+
 #include "libft.h"
 
 char * ft_strsub(char const *s, unsigned int start, size_t len)
 {
-    int		count;
+    size_t	count;
     char	*res;
     unsigned int tmp;
 

@@ -72,7 +72,7 @@ void	bresenham(t_line line, t_coord *data)
     z1 = data->matrix[(int)line.y1][(int)line.x1];
     check_iso(data, &z, &z1, &line);
     move(&line, &x_step, &y_step, data);
-    max = max(abs(x_step), abs(y_step));
+    max = my_max(my_abs(x_step), my_abs(y_step));
     x_step /= max;
     y_step /= max;
     while ((int)(line.x - line.x1) || (int)(line.y - line.y1))

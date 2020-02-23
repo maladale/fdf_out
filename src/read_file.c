@@ -3,16 +3,6 @@
 //
 
 #include "fdf.h"
-#include "gnl2411.h"
-//#include "gnl2411.c"
-#include "get_next_line.c"
-#include "ft_strsplit.c"
-#include "ft_strcmp.c"
-//#include "ft_strlen.c"
-#include <stdio.h>
-#include "ft_isdigit.c"
-#include "ft_atoi.c"
-#include "service_function.c"
 
 int check_arr(char **arr)
 {
@@ -73,7 +63,6 @@ int assign_coord(int **matrix, int width, char *line, int dim)
     height= 0;
      while (spl_str[height++]) {
          matrix[width][height-1] = ft_atoi(spl_str[height-1]);
-         printf("%i ", matrix[width][height-1]);
      }
     free(spl_str);
     return (1);
@@ -97,7 +86,6 @@ t_coord *read_file(char *filename, t_coord *our_coord)
     our_coord->matrix = (int **)malloc(sizeof(int) * dim[0]);
     while (get_next_line(fd, &line) > 0) {
         assign_coord(our_coord->matrix, width++, line, dim[1]);
-        printf("\n");
     }
     free(line);
     free(dim);
